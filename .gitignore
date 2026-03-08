@@ -1,3 +1,5 @@
-*.zip
 *.pdf
 *.png
+data/raw/NLCD/tn_NLCD_raw
+arcgis/*
+!arcgis/KestrelHabitatSuitability.aprx
