@@ -38,6 +38,9 @@ MaxEnt is a machine learning algorithm that is used to predict the distribution 
 - Trim the land cover dataset to Tennessee
 - Remove eBird observations from months outside of breeding season (March - August)
   - Doing so removes the migratory observations that are far from normal habitat locations from the dataset.
+- (Possibly) Use spatial thinning to reduce the number of data points.
+- Buffer the eBird data points by 1km (or similar distance) to create a buffer zone around the points.
+- Copy and clip the land cover data to the buffer zone around the eBird data points.
 - Standardize all environmental layers (extent, resolution, and projection) to prepare for MaxEnt input.
 - Split occurrence data into training and validation datasets.
 - Run the MaxEnt model to estimate habitat suitability.
