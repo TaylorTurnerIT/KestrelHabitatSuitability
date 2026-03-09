@@ -5,3 +5,5 @@ data/raw/NLCD/tn_NLCD_raw.zip
 arcgis/*
 !arcgis/KestrelHabitatSuitability.aprx
 data/processed/*
+data/raw/NLCD/NLCD_Symbology_Pruned.lyrx
+test_*.py

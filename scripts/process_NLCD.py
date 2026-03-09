@@ -6,7 +6,12 @@ import sys
 # Paths
 raw_dir = r"c:\Users\Taylor\ComputerScience\KestrelHabitatSuitability\data\raw\NLCD\tn_NLCD_raw"
 processed_dir = r"c:\Users\Taylor\ComputerScience\KestrelHabitatSuitability\data\processed\environmental"
-symbology_layer = r"c:\Users\Taylor\ComputerScience\KestrelHabitatSuitability\data\raw\NLCD\NLCD_Symbology.lyrx"
+symbology_layer = r"c:\Users\Taylor\ComputerScience\KestrelHabitatSuitability\data\raw\NLCD\NLCD_Symbology_Pruned.lyrx"
+
+# Validate symbology layer exists
+if not arcpy.Exists(symbology_layer):
+    print(f"Error: Symbology layer not found at {symbology_layer}")
+    sys.exit()
 
 arcpy.env.workspace = raw_dir
 arcpy.env.overwriteOutput = True
