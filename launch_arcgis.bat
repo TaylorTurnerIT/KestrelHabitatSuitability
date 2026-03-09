@@ -1,0 +1,3 @@
+@echo off
+echo Launching ArcGIS Pro Project...
+start "" "c:\Users\Taylor\ComputerScience\KestrelHabitatSuitability\arcgis\KestrelHabitatSuitability.aprx"
